@@ -24,7 +24,7 @@
 ## 🛠 練習的工具
 
 - [Next.js](https://nextjs.org/) 
-- [Tailwindcss](https://tailwindcss.com/) - CSS framework
+- [Chakra](https://chakra-ui.com/)
 - [Prismic](https://prismic.io/) - Content Management System
 - [Netify](https://www.netlify.com/) - Deploy website
 
