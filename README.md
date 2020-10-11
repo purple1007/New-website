@@ -4,7 +4,6 @@
 ## 🚀 目標
 
 建立一個可以**長期經營的個人網站**，將文章、作品匯集到同一個站。
-
 <br/>
 
 ## 📝 需要加入
@@ -35,3 +34,8 @@
 - [Building a Markdown blog with Next 9.4 and Netlify | Netlify Blog](https://www.netlify.com/blog/2020/05/04/building-a-markdown-blog-with-next-9.4-and-netlify/#setting-up-our-next-js-project)
 - [Using Next.js and Prismic | Next.js - GitHub](https://github.com/vercel/next.js/tree/canary/examples/cms-prismic)
 - [Using Prismic with Next.js | Prismic](https://prismic.io/docs/reactjs/getting-started/prismic-nextjs)
+
+
+#### 🎨 Design 
+
+- [Design pages | Figma](https://www.figma.com/file/lTBe2kh5d7rIKD9n16BKN5/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99%E6%94%B9%E7%89%88?node-id=0%3A1) 
