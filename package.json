@@ -1,0 +1,26 @@
+{
+  "name": "debbylin.me",
+  "description": "My personal website.",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purple1007/New-website.git"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "next": "^9.5.5",
+    "next-seo": "^4.11.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "sass": "^1.27.0"
+  }
+}
