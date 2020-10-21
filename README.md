@@ -22,9 +22,10 @@
 ## 🛠 練習的工具
 
 - [Next.js](https://nextjs.org/) 
-- [Chakra](https://chakra-ui.com/)
+- [Chakra](https://next.chakra-ui.com/docs/getting-started)
 - [Prismic](https://prismic.io/) - Content Management System
 - [Netify](https://www.netlify.com/) - Deploy website
+- [Emotion](https://emotion.sh/docs/introduction) - Emotion is a library designed for writing css styles with JavaScript.
 
 <br/>
 
