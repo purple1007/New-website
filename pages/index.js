@@ -1,13 +1,15 @@
-import React from 'react';
 import { NextSeo } from 'next-seo';
-import Container from '../components/Container';
+import Layout from '../components/Layout';
+import Hero from '../components/index/Hero'
+import WorkingOn from '../components/index/WorkingOn' 
 
 const Index = () => {
   return (
     <>
-    <Container>
-    <div>首頁</div>
-    </Container>
+    <Layout>
+    <Hero/>
+    <WorkingOn/>
+    </Layout>
     </>
   );
 };
