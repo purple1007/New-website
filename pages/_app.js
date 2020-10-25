@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { Global, css } from '@emotion/core';
 import { 
   useColorMode,
@@ -6,13 +5,12 @@ import {
  } from '@chakra-ui/core';
 
 import theme from '../stlyes/theme';
+import Router from 'next/router';
 import Head from 'next/head';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
 
 const GlobalStyle = ({ children }) => {
-  const { colorMode } = useColorMode();
-  
   return (
     <>
       <Global
@@ -23,10 +21,15 @@ const GlobalStyle = ({ children }) => {
           }
         `}
       />
-    {children}
+      {children}
     </>
   );
 };
+
+// Router.events.on('routeChangeComplete', () => {
+//   Fathom.trackPageview();
+// });
+
 
 function App({ Component, pageProps }) {
   return (

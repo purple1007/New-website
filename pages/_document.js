@@ -2,11 +2,13 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import React, { useEffect } from 'react';
 import { ColorModeScript } from '@chakra-ui/core';
 import theme from '../stlyes/theme';
+import GoogleFonts from 'next-google-fonts';
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
+        <GoogleFonts href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Open+Sans:wght@400;700&display=swap"/>
         <Head>
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
@@ -35,7 +37,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-            <Main />
+          <Main />
           <NextScript />
         </body>
       </Html>
