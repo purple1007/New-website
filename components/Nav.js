@@ -43,7 +43,7 @@ const Nav = () => {
         width="100%"
         bg={navBgColor[colorMode]}
         as="nav"
-        px={8}
+        px={6}
         py={3}
         mt={0}
         mx="auto"
@@ -79,6 +79,7 @@ const Nav = () => {
                 as='a'
                 color={ primarytextColor[colorMode] }
                 fontSize='base'
+                fontWeight='normal'
                 variant='ghost'
                 _hover={{ 
                   bg: hoverIconBgColor[colorMode],
@@ -93,6 +94,7 @@ const Nav = () => {
                 as='a'
                 color={ primarytextColor[colorMode] }
                 fontSize='base'
+                fontWeight='normal'
                 variant='ghost'
                 _hover={{ 
                   bg: hoverIconBgColor[colorMode],

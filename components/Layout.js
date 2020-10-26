@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import { useColorMode, Container, Flex } from '@chakra-ui/core';
 import styled from '@emotion/styled';
 import Nav from './Nav'
+import Footer from './Footer'
 
 const Layout = ({ children }) => {
   const { colorMode } = useColorMode();
@@ -25,18 +26,20 @@ const Layout = ({ children }) => {
         bg={ bgColor[colorMode] }
         w='100%'
         >
-      <Container
-        as="main"
-        flexDirection="column"
-        bg={ bgColor[colorMode] }
-        color={ primarytextColor[colorMode] }
-        px={6}
-        maxW={800}
-        centerContent
-      >
-      { children }
-      </Container>
+        <Container
+          as="main"
+          flexDirection="column"
+          bg={ bgColor[colorMode] }
+          color={ primarytextColor[colorMode] }
+          px={6}
+          maxW={800}
+          centerContent
+        >
+        { children }
+        
+        </Container>
       </Flex>
+      <Footer/>
     </>
   )
 }

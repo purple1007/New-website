@@ -10,8 +10,6 @@ const WorkingOn = () => {
     <Box 
       as='section'
       w='full'
-      d='flex'
-      flexWrap='wrap'
       my='20'
     >
       <SectionTitle>
@@ -22,7 +20,7 @@ const WorkingOn = () => {
         flexWrap='wrap'>
         {
           WorkItemList.map(( WorkItemList ) => {
-            return <WorkingItemBox item={WorkItemList} key={WorkItemList.slug}/>
+            return <WorkingItemBox item={WorkItemList} key={WorkItemList.url}/>
           })
         }
       </Box>

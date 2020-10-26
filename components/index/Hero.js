@@ -1,8 +1,9 @@
-import { Heading, Text } from '@chakra-ui/core';
+import { Heading, Text, Flex } from '@chakra-ui/core';
 
 const Hero = () => {
   return (
     <>
+      <Flex id='top'></Flex>
       <Heading
         as='h1'
         fontSize={{
