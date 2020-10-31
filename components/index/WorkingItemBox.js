@@ -37,6 +37,9 @@ const WorkingItemBox = ({ item }) => {
     <>
       <Link
         href={item.url}
+        data-event-category='WorkingOn'
+        data-event-action='Click'
+        data-event-label={item.title}
         isExternal
         display='flex'
         flexDirection='column'

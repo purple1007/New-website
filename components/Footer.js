@@ -1,5 +1,7 @@
 import { useColorMode, Container, Box, Heading, Link, Text, Flex, IconButton } from '@chakra-ui/core'
 import { FiChevronUp } from 'react-icons/fi'
+import FooterLink from './FooterLink'
+import FooterLinkItem from '../data/FooterLinkItem'
 
 const Footer = () => {
   const { colorMode } = useColorMode()
@@ -71,6 +73,8 @@ const Footer = () => {
             </Heading>
             <Link
               href='info@debbylin.me'
+              data-event-category='Footer'
+              data-event-action='E-mail'
               _hover={{
                 color: 'primary.base',
                 textDecoration: 'underline'
@@ -94,50 +98,11 @@ const Footer = () => {
               Find me on
             </Heading>
             <Flex mt={2}>
-              <Link
-                pr={4}
-                href='https://dribbble.com/debby'
-                _hover={{
-                  color: 'primary.base',
-                  textDecoration: 'underline'
-                }}
-                isExternal
-              >
-                Dribbble
-              </Link>
-              <Link
-                pr={4}
-                href='https://www.instagram.com/debby.design/'
-                _hover={{
-                  color: 'primary.base',
-                  textDecoration: 'underline'
-                }}
-                isExternal
-              >
-                Instagram
-              </Link>
-              <Link
-                pr={4}
-                href='https://www.behance.net/debby-design'
-                _hover={{
-                  color: 'primary.base',
-                  textDecoration: 'underline'
-                }}
-                isExternal
-              >
-                Behance
-              </Link>
-              <Link
-                pr={4}
-                href='https://github.com/purple1007'
-                _hover={{
-                  color: 'primary.base',
-                  textDecoration: 'underline'
-                }}
-                isExternal
-              >
-                GitHub
-              </Link>
+              {
+                FooterLinkItem.map((FooterLinkItem) => {
+                  return <FooterLink item={FooterLinkItem} key={FooterLinkItem.url} />
+                })
+              }
             </Flex>
           </Box>
           <Text
