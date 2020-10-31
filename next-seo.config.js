@@ -1,6 +1,6 @@
-const title = 'Debby | Web Designer & UI Designer';
+const title = 'Debby | Web Designer & UI Designer'
 const description =
-  'Debby is a Web Designer & UI Designer, She also learning front-end development now, And try to create interesting motion &amp; design in website.';
+  'Debby is a Web Designer & UI Designer, She also learning front-end development now, And try to create interesting motion &amp; design in website.'
 
 const SEO = {
   title,
@@ -21,6 +21,6 @@ const SEO = {
       }
     ]
   }
-};
+}
 
-export default SEO;
+export default SEO

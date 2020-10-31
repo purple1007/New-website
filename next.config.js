@@ -7,6 +7,6 @@ module.exports = {
     //   require('./scripts/generate-sitemap');
     // }
 
-    return config;
+    return config
   }
 }

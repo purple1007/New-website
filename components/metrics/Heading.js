@@ -1,9 +1,6 @@
-import { Flex, Heading, Text } from '@chakra-ui/core';
-import styled from '@emotion/styled';
-
+import { Heading } from '@chakra-ui/core'
 
 const SectionTitle = ({ children }) => {
-
   return (
     <>
       <Heading
@@ -24,10 +21,10 @@ const SectionTitle = ({ children }) => {
           h: '100%'
         }}
       >
-      { children }
+        {children}
       </Heading>
     </>
-  );
-};
+  )
+}
 
-export default SectionTitle;
+export default SectionTitle
