@@ -1,10 +1,13 @@
-import { Global, css } from '@emotion/core'
-import { ChakraProvider } from '@chakra-ui/core'
-
-import theme from '../stlyes/theme'
-import Head from 'next/head'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import * as gtag from '../lib/gtag'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../next-seo.config'
+
+import { Global, css } from '@emotion/core'
+import { ChakraProvider } from '@chakra-ui/core'
+import theme from '../stlyes/theme'
+import Head from 'next/head'
 
 const GlobalStyle = ({ children }) => {
   return (
@@ -27,6 +30,18 @@ const GlobalStyle = ({ children }) => {
 // });
 
 function App ({ Component, pageProps }) {
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <ChakraProvider resetCSS theme={theme}>
       <GlobalStyle>
