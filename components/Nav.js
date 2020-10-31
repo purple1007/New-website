@@ -74,7 +74,7 @@ const Nav = () => {
             justifyContent="between"
             flexDirection="row"
           >
-            <NextLink href='/' passHref>
+            {/* <NextLink href='/' passHref>
               <Button
                 as='a'
                 color={ primarytextColor[colorMode] }
@@ -87,9 +87,9 @@ const Nav = () => {
                 _active={{ bg:'opacity.0' }} >
                 Works
               </Button>
-            </NextLink>
+            </NextLink> */}
 
-            <NextLink href='/' passHref>
+            {/* <NextLink href='/' passHref>
               <Button
                 as='a'
                 color={ primarytextColor[colorMode] }
@@ -102,7 +102,7 @@ const Nav = () => {
                 _active={{ bg:'opacity.0' }} >
               Blog
               </Button>
-            </NextLink>
+            </NextLink> */}
             
             <Button 
               aria-label="Toggle dark mode"
