@@ -1,15 +1,15 @@
-import { Heading, Text, Flex } from '@chakra-ui/core';
+import { Heading, Text, Flex, Link } from '@chakra-ui/core'
 
 const Hero = () => {
   return (
     <>
-      <Flex id='top'></Flex>
+      <Flex id='top' />
       <Heading
         as='h1'
         fontSize={{
           base: '4xl',
-          lg:'5xl'
-          }}
+          lg: '5xl'
+        }}
         color='primary.base'
         fontWeight='normal'
         mt='20'
@@ -17,26 +17,48 @@ const Hero = () => {
         w='full'
       >
         <Text
-          as='span' 
+          as='span'
           display='block'
           mb='2'
-          >
+        >
           Hi! I’m Debby.
         </Text>
         <span>I’m a </span>
-        <Text 
+        <Text
           fontWeight='bold'
-          as='span'>
+          as='span'
+        >
           Web Designer & UI Designer
         </Text>.
       </Heading>
       <Text
         lineHeight='1.5'
+      >
+        Hi! I’m Debby. I’m a web designer and a UI designer.<br />
+        I have more than 5 years of experience in graphic design, and 2 years of experience in website design. I like creative colors and layout. Using colors, typography and shapes to build different layouts is fascinating to me.<br />
+        Here you can check out more of my {' '}
+        <Link
+          href='https://dribbble.com/debby'
+          isExternal
+          _hover={{
+            color: 'primary.base',
+            textDecoration: 'underline'
+          }}
         >
-        Hi! I’m Debby. I’m a web designer and a UI designer.<br/>
-        I have more than 5 years of experience in graphic design, and 2 years of experience in website design. I like creative colors and layout. Using colors, typography and shapes to build different layouts is fascinating to me.<br/>
-        Here you can check out more of my works and hope you like it!<br/>
-        If you have any question or just want to talk, welcome to contact me through here ! &#041;
+          works
+        </Link>
+        and hope you like it!<br />
+        If you have any question or just want to talk, welcome to contact me through {' '}
+        <Link
+          href='#footer'
+          breakout='true'
+          _hover={{
+            color: 'primary.base',
+            textDecoration: 'underline'
+          }}
+        >
+          here
+        </Link> ! :&#041;
       </Text>
     </>
   )
