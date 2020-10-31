@@ -14,10 +14,10 @@ const SEO = {
     description,
     images: [
       {
-        url: 'https://www.debbylin.me/static/images/og.jpg',
+        url: 'https://www.debbylin.me/static/images/og-image.jpg',
         alt: title,
-        width: 1440,
-        height: 793
+        width: 1280,
+        height: 720
       }
     ]
   }
