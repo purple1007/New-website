@@ -40,20 +40,26 @@ const Hero = () => {
         <Link
           href='https://dribbble.com/debby'
           isExternal
+          data-event-category='AboutMeText'
+          data-event-action='LearnMore'
+          data-event-label='CheckWorks'
+          color='primary.base'
           _hover={{
-            color: 'primary.base',
             textDecoration: 'underline'
           }}
         >
-          works
+          works {' '}
         </Link>
         and hope you like it!<br />
         If you have any question or just want to talk, welcome to contact me through {' '}
         <Link
           href='#footer'
           breakout='true'
+          data-event-category='AboutMeText'
+          data-event-action='Click'
+          data-event-label='ContactMe'
+          color='primary.base'
           _hover={{
-            color: 'primary.base',
             textDecoration: 'underline'
           }}
         >

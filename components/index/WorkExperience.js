@@ -15,7 +15,7 @@ const WorkExperience = () => {
           Full-time Work Experience
         </SectionTitle>
         <Box
-          mt='16'
+          mt='10'
           flexWrap='wrap'
         >
           {
