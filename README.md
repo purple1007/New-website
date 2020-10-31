@@ -47,6 +47,7 @@ Build a personal profile website and gather works and articles.
 - [Using Prismic with Next.js | Prismic](https://prismic.io/docs/reactjs/getting-started/prismic-nextjs)
   
 <br />
+
 ---
 
 ### 🔮 Inspire
