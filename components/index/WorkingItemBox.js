@@ -38,7 +38,8 @@ const WorkingItemBox = ({ item }) => {
       <Link
         href={item.url}
         isExternal
-        display='block'
+        display='flex'
+        flexDirection='column'
         w={{
           base: 'full',
           md: '70%',
@@ -74,6 +75,7 @@ const WorkingItemBox = ({ item }) => {
         </Text>
 
         <Text
+          mt='auto'
           color={linkColor[colorMode]}
           _groupHover={{
             color: 'primary.base',
