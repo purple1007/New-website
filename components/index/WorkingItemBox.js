@@ -1,21 +1,21 @@
-import { useColorMode, Box, Heading, Text, Link } from '@chakra-ui/core'
+import { useColorMode, Heading, Text, Link } from '@chakra-ui/core'
 
 const WorkingItemBox = ({ item }) => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode()
 
   const borderColor = {
     light: 'lightGray.200',
     dark: 'darkGray.700'
   }
-  
+
   const hoverBorder = {
     light: 'lightGray.300',
-    dark: '#73162d',
+    dark: '#73162d'
   }
 
   const hoverShadow = {
     light: '0 0 20px #dadada',
-    dark: '0 0 20px #060d25'
+    dark: '0 0 20px #11141f'
   }
 
   const titleColor = {
@@ -35,54 +35,56 @@ const WorkingItemBox = ({ item }) => {
 
   return (
     <>
-      <Link href={item.url} isExternal>
-        <Box
-          d='inline-block'
-          border='1px'
-          transition='all .3s'
-          borderColor={ borderColor[colorMode] }
-          p={4}
-          w={{
-            base: 'full',
-            lg: '50%' }}
-          _hover={{ 
-            bg: boxColor[colorMode],
-            border: hoverBorder[colorMode],
-            boxShadow: hoverShadow[colorMode],
-            cursor: 'pointer', 
-            }}
-          _focus={{ boxShadow: '0 0 0 0px rgb(0 0 0 / 0%);' }}
-          >
+      <Link
+        href={item.url}
+        isExternal
+        p={4}
+        w={{
+          base: 'full',
+          md: '70%',
+          lg: '50%'
+        }}
+        role='group'
+        mx='auto'
+        minHeight='100%'
+        border='1px'
+        borderColor={borderColor[colorMode]}
+        transition='all .3s'
+        _hover={{
+          bg: boxColor[colorMode],
+          border: hoverBorder[colorMode],
+          boxShadow: hoverShadow[colorMode],
+          cursor: 'pointer'
+        }}
+        _focus={{ boxShadow: '0 0 0 0px rgb(0 0 0 / 0%);' }}
+      >
+        <Heading
+          as='h3'
+          color={titleColor[colorMode]}
+          fontWeight='bold'
+          fontSize='lg'
+          mb='4'
+        >
+          {item.title}
+        </Heading>
 
-          <Heading
-            as='h3'
-            color={titleColor[colorMode]}
-            fontWeight='bold'
-            fontSize='lg'
-            mb='4' >
-            {item.title}
-          </Heading>
-
-          <Text mb='10'>
+        <Text mb='10'>
           {item.summary}
-          </Text>
+        </Text>
 
-          <Link
-            href={item.url}
-            color={linkColor[colorMode]}
-            _hover={{
-              color: 'primary.base',
-              textDecoration: 'underline' }} 
-            _focus={{ boxShadow: '0 0 0 0px rgb(0 0 0 / 0%);' }} 
-            isExternal
-            >
-            {item.link}
-          </Link>
-        
-        </Box>
+        <Text
+          color={linkColor[colorMode]}
+          _groupHover={{
+            color: 'primary.base',
+            textDecoration: 'underline'
+          }}
+          _groupFocus={{ boxShadow: '0 0 0 0px rgb(0 0 0 / 0%);' }}
+        >
+          {item.link}
+        </Text>
       </Link>
     </>
-  ) 
-};
+  )
+}
 
-export default WorkingItemBox;
+export default WorkingItemBox
