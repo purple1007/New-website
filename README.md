@@ -45,6 +45,7 @@ Build a personal profile website and gather works and articles.
 - [Building a Markdown blog with Next 9.4 and Netlify | Netlify Blog](https://www.netlify.com/blog/2020/05/04/building-a-markdown-blog-with-next-9.4-and-netlify/#setting-up-our-next-js-project)
 - [Using Next.js and Prismic | Next.js - GitHub](https://github.com/vercel/next.js/tree/canary/examples/cms-prismic)
 - [Using Prismic with Next.js | Prismic](https://prismic.io/docs/reactjs/getting-started/prismic-nextjs)
+- [SEO in Next.js and Prismic](https://www.garymeehan.ie/blog/handling-seo-with-nextjs-and-prismic)
   
 <br />
 
