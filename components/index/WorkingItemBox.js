@@ -38,7 +38,7 @@ const WorkingItemBox = ({ item }) => {
       <Link
         href={item.url}
         isExternal
-        p={4}
+        display='block'
         w={{
           base: 'full',
           md: '70%',
@@ -46,6 +46,7 @@ const WorkingItemBox = ({ item }) => {
         }}
         role='group'
         mx='auto'
+        p={4}
         minHeight='100%'
         border='1px'
         borderColor={borderColor[colorMode]}
