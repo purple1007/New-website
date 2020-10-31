@@ -39,7 +39,7 @@ const WorkingItemBox = ({ item }) => {
         href={item.url}
         data-event-category='WorkingOn'
         data-event-action='Click'
-        data-event-label={item.title}
+        data-event-label={item.name}
         isExternal
         display='flex'
         flexDirection='column'
@@ -86,7 +86,7 @@ const WorkingItemBox = ({ item }) => {
           }}
           _groupFocus={{ boxShadow: '0 0 0 0px rgb(0 0 0 / 0%);' }}
         >
-          {item.link}
+          {item.name}
         </Text>
       </Link>
     </>
