@@ -8,7 +8,7 @@ const WorkItemList = [
   {
     title: 'Author',
     summary: "With the help of my friends, I built a blog, it's about our UI/UX learning experience, design thinking, etc. I am now one of the  writers in this blog.",
-    link: '一塊設計 UI/UX 設計共筆部落格',
+    link: '一塊設計 | apo design UI/UX 設計共筆部落格',
     url: 'http://apodesign.tw/'
   },
   {
