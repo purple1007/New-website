@@ -14,8 +14,8 @@ const WorkItemList = [
   {
     title: 'Project Management',
     summary: "I like building and organizing projects. Enhancing our team and customer's to cooperate in an effective, better way.",
-    name: 'nameedIn',
-    url: 'https://www.nameedin.com/in/debbylin1991/'
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/debbylin1991/'
   },
   {
     title: 'Learning web develop',
