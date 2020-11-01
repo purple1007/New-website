@@ -14,6 +14,10 @@ const FooterLinkItem = [
   {
     name: 'GitHub',
     url: 'https://github.com/purple1007'
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/debbylin1991/'
   }
 ]
 

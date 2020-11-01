@@ -1,5 +1,5 @@
-import { useColorMode, Container, Box, Heading, Link, Text, Flex, IconButton } from '@chakra-ui/core'
-import { FiChevronUp } from 'react-icons/fi'
+import { useColorMode, Container, Box, Heading, Link, Text, Flex } from '@chakra-ui/core'
+import TopButton from './metrics/TopButton'
 import FooterLink from './FooterLink'
 import FooterLinkItem from '../data/FooterLinkItem'
 
@@ -16,19 +16,14 @@ const Footer = () => {
     dark: 'darkGray.500'
   }
 
-  const iconColor = {
-    light: 'lightGray.400',
-    dark: 'darkGray.500'
+  const headColor = {
+    light: 'lightGray.700',
+    dark: 'darkGray.100'
   }
 
-  const hoverIconBgColor = {
-    light: 'lightGray.200',
-    dark: 'darkGray.800'
-  }
-
-  const activeIconBgColor = {
-    light: 'lightGray.300',
-    dark: 'darkGray.900'
+  const primarytextColor = {
+    light: 'lightGray.600',
+    dark: 'darkGray.100'
   }
 
   return (
@@ -36,6 +31,7 @@ const Footer = () => {
       <Box
         as='footer'
         bg={bgColor[colorMode]}
+        color={primarytextColor[colorMode]}
         w='full'
         d='block'
         id='footer'
@@ -92,6 +88,7 @@ const Footer = () => {
           >
             <Heading
               as='h3'
+              color={headColor[colorMode]}
               fontWeight='bold'
               fontSize='5xl'
             >
@@ -113,27 +110,7 @@ const Footer = () => {
           >
             Copyright © 2020 Debby Lin.
           </Text>
-          <Link
-            href='#top'
-            breakout='true'
-          >
-            <IconButton
-              variant='outline'
-              icon={<FiChevronUp />}
-              size='md'
-              color={iconColor[colorMode]}
-              position='absolute'
-              bottom={10}
-              right={6}
-              fontSize='20px'
-              _hover={{
-                bg: hoverIconBgColor[colorMode]
-              }}
-              _active={{
-                bg: activeIconBgColor[colorMode]
-              }}
-            />
-          </Link>
+          <TopButton />
         </Container>
       </Box>
     </>
