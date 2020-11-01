@@ -36,7 +36,6 @@ const Hero = () => {
       >
         Hi! I’m Debby. I’m a web designer and a UI designer.<br />
         I have more than 5 years of experience in graphic design, and 2 years of experience in website design. I like creative colors and layout. Using colors, typography and shapes to build different layouts is fascinating to me.<br />
-        Here you can check out more of my {' '}
         <Link
           href='https://dribbble.com/debby'
           isExternal
@@ -48,9 +47,8 @@ const Hero = () => {
             textDecoration: 'underline'
           }}
         >
-          works {' '}
-        </Link>
-        and hope you like it!<br />
+          Here {' '}
+        </Link> you can check out more of my works and hope you like it!<br />
         If you have any question or just want to talk, welcome to contact me through {' '}
         <Link
           href='#footer'
