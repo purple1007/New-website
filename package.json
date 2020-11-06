@@ -29,6 +29,6 @@
     "sass": "^1.28.0"
   },
   "devDependencies": {
-    "standard": "^16.0.0"
+    "standard": "^16.0.1"
   }
 }
