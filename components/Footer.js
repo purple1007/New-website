@@ -94,7 +94,10 @@ const Footer = () => {
             >
               Find me on
             </Heading>
-            <Flex mt={2}>
+            <Flex
+              flexWrap='wrap'
+              mt={[4, 2]}
+            >
               {
                 FooterLinkItem.map((FooterLinkItem) => {
                   return <FooterLink item={FooterLinkItem} key={FooterLinkItem.url} />

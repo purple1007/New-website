@@ -4,7 +4,8 @@ const FooterLink = ({ item }) => {
   return (
     <>
       <Link
-        pr={4}
+        mr={4}
+        mb={2}
         data-event-category='Footer'
         data-event-action={item.name}
         href={item.url}
