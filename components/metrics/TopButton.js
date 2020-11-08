@@ -1,3 +1,4 @@
+import NextLink from 'next/link'
 import { useColorMode, IconButton, Link } from '@chakra-ui/core'
 import { FiChevronUp } from 'react-icons/fi'
 
@@ -20,27 +21,29 @@ const TopButton = () => {
 
   return (
     <>
-      <Link
-        href='#top'
-        breakout='true'
-      >
-        <IconButton
-          variant='outline'
-          icon={<FiChevronUp />}
-          size='md'
-          color={iconColor[colorMode]}
-          position='absolute'
-          bottom={10}
-          right={6}
-          fontSize='20px'
-          _hover={{
-            bg: hoverIconBgColor[colorMode]
-          }}
-          _active={{
-            bg: activeIconBgColor[colorMode]
-          }}
-        />
-      </Link>
+      <NextLink href='' scroll>
+        <Link
+          id='top'
+          breakout='true'
+        >
+          <IconButton
+            variant='outline'
+            icon={<FiChevronUp />}
+            size='md'
+            color={iconColor[colorMode]}
+            position='absolute'
+            bottom={10}
+            right={6}
+            fontSize='20px'
+            _hover={{
+              bg: hoverIconBgColor[colorMode]
+            }}
+            _active={{
+              bg: activeIconBgColor[colorMode]
+            }}
+          />
+        </Link>
+      </NextLink>
     </>
   )
 }
