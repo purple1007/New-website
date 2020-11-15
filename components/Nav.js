@@ -53,7 +53,7 @@ const Nav = () => {
           maxWidth='900px'
           width='100%'
         >
-          <NextLink href='/' passHref>
+          <NextLink href='/' passHref replace>
             <Button
               as='a'
               color='primary.base'
@@ -93,7 +93,7 @@ const Nav = () => {
               </Button>
             </NextLink> */}
 
-            <NextLink href='blog' passHref>
+            <NextLink href='/blog' passHref replace>
               <Button
                 as='a'
                 color={primarytextColor[colorMode]}
