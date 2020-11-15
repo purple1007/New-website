@@ -9,8 +9,8 @@ const WorkingOn = () => {
       <Box
         as='section'
         w='full'
-        mt='40'
-        mb='20'
+        mt={40}
+        mb={20}
       >
         <SectionTitle>
           What I’m working on

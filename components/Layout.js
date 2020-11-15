@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       <Flex
         as='div'
         bg={bgColor[colorMode]}
-        w='100%'
+        w='full'
         _selection={{
           color: 'white',
           background: 'primary.base'

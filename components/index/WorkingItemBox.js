@@ -68,12 +68,12 @@ const WorkingItemBox = ({ item }) => {
           color={titleColor[colorMode]}
           fontWeight='bold'
           fontSize='lg'
-          mb='4'
+          mb={4}
         >
           {item.title}
         </Heading>
 
-        <Text mb='10'>
+        <Text mb={10}>
           {item.summary}
         </Text>
 
