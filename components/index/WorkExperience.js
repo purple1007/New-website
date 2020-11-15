@@ -9,13 +9,13 @@ const WorkExperience = () => {
       <Box
         as='section'
         w='full'
-        my='20'
+        my={20}
       >
         <SectionTitle>
           Full-time Work Experience
         </SectionTitle>
         <Box
-          mt='10'
+          mt={10}
           flexWrap='wrap'
         >
           {
