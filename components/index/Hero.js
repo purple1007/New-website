@@ -11,14 +11,14 @@ const Hero = () => {
         }}
         color='primary.base'
         fontWeight='normal'
-        mt='20'
-        mb='10'
+        mt={20}
+        mb={10}
         w='full'
       >
         <Text
           as='span'
           display='block'
-          mb='2'
+          mb={2}
         >
           Hi! I’m Debby.
         </Text>
