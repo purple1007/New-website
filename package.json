@@ -20,7 +20,7 @@
     "@emotion/core": "10.0.35",
     "babel-plugin-import-glob-array": "^0.2.0",
     "emotion-theming": "^11.0.0",
-    "@emotion/react": "^11.0.0",
+    "@emotion/react": "^11.1.2",
     "@emotion/styled": "^11.0.0",
     "framer-motion": "^2.9.4",
     "next": "^10.0.1",
