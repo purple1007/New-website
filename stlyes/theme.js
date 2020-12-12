@@ -1,30 +1,25 @@
-import { theme as chakraTheme, extendTheme } from '@chakra-ui/core'
+import { extendTheme } from '@chakra-ui/react'
 
-const config = {
-  useSystemColorMode: false,
-  initialColorMode: 'light'
-}
+const config = { useSystemColorMode: false }
 
 const Button = {
   baseStyle: {
     _focus: { boxShadow: '0 0 0 0px rgb(0 0 0 / 0%);' }
   }
 }
-const theme = extendTheme({
-  ...chakraTheme,
-  config,
+
+const theme = {
   styles: {
     global: {
-      'html, body': {
+      'html,body': {
         fontFamily: 'Open Sans, Noto Sans TC, Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"'
       },
-      button: {
-        _focus: { boxShadow: '0 0 0 0px rgba(255,255,255, 0%);' }
-      },
-      a: {
-        _focus: { boxShadow: '0 0 0 0px rgba(255,255,255, 0%);' }
+      body: {
+        minWidth: '360px',
+        scrollBehavior: 'smooth'
       }
-    }
+    },
+    ...config
   },
   colors: {
     primary: {
@@ -62,10 +57,6 @@ const theme = extendTheme({
       50: '#F7FAFC'
     }
   },
-  font: {
-    ...chakraTheme.fonts,
-    body: 'Open Sans, Noto Sans TC, Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"'
-  },
   fontWeights: {
     normal: 400,
     medium: 600,
@@ -74,6 +65,8 @@ const theme = extendTheme({
   components: {
     Button
   }
-})
+}
 
-export default theme
+const customTheme = extendTheme(theme)
+
+export default customTheme

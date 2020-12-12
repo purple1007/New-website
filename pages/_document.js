@@ -1,7 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import React from 'react'
-import { ColorModeScript } from '@chakra-ui/core'
-import theme from '../stlyes/theme'
+import { ColorModeScript } from '@chakra-ui/react'
 import GoogleFonts from 'next-google-fonts'
 import { GA_TRACKING_ID, GTM_ID } from '../lib/gtag'
 
@@ -63,7 +62,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+          <ColorModeScript initialColorMode='light' />
           <Main />
           <NextScript />
           {/* Google Tag Manager (noscript) */}
