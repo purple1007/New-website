@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/core'
+import { Box } from '@chakra-ui/react'
 import WorkTimeline from '../../data/WorkTimeline'
 import WorkTimeItem from '../index/WorkTimeItem'
 import SectionTitle from '../metrics/Heading'

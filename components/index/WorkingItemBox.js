@@ -1,4 +1,4 @@
-import { useColorMode, Heading, Text, Link } from '@chakra-ui/core'
+import { useColorMode, Heading, Text, Link } from '@chakra-ui/react'
 
 const WorkingItemBox = ({ item }) => {
   const { colorMode } = useColorMode()

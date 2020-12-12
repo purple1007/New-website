@@ -1,4 +1,4 @@
-import { useColorMode, Container, Box, Heading, Link, Text, Flex } from '@chakra-ui/core'
+import { useColorMode, Container, Box, Heading, Link, Text, Flex } from '@chakra-ui/react'
 import TopButton from './metrics/TopButton'
 import FooterLink from './FooterLink'
 import FooterLinkItem from '../data/FooterLinkItem'
