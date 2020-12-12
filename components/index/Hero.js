@@ -1,4 +1,4 @@
-import { Heading, Text, Flex, Link } from '@chakra-ui/core'
+import { Heading, Text, Flex, Link } from '@chakra-ui/react'
 
 const Hero = () => {
   return (
