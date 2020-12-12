@@ -14,14 +14,11 @@
     "url": "git+https://github.com/purple1007/New-website.git"
   },
   "dependencies": {
-    "@chakra-ui/core": "^1.0.0-rc.5",
     "@chakra-ui/react": "^1.0.0",
     "@chakra-ui/theme": "^1.0.0-rc.8",
-    "@emotion/core": "10.0.35",
-    "babel-plugin-import-glob-array": "^0.2.0",
-    "emotion-theming": "^11.0.0",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
+    "babel-plugin-import-glob-array": "^0.2.0",
     "framer-motion": "^2.9.4",
     "next": "^10.0.1",
     "next-google-fonts": "^1.2.1",
