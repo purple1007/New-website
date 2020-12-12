@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/core'
+import { Box, Flex } from '@chakra-ui/react'
 import SectionTitle from '../metrics/Heading'
 import WorkingItemBox from './WorkingItemBox'
 import WorkItemList from '../../data/WorkingOnList'

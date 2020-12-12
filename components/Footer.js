@@ -1,4 +1,4 @@
-import { useColorMode, Container, Box, Heading, Link, Text, Flex } from '@chakra-ui/core'
+import { useColorMode, Container, Box, Heading, Link, Text, Flex } from '@chakra-ui/react'
 import TopButton from './metrics/TopButton'
 import FooterLink from './FooterLink'
 import FooterLinkItem from '../data/FooterLinkItem'
@@ -68,14 +68,13 @@ const Footer = () => {
               Let's talk!
             </Heading>
             <Link
-              href='info@debbylin.me'
+              href='mailto:info@debbylin.me'
               data-event-category='Footer'
               data-event-action='E-mail'
               _hover={{
                 color: 'primary.base',
                 textDecoration: 'underline'
               }}
-              isExternal
             >
               info@debbylin.me
             </Link>

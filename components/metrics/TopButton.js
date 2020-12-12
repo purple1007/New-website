@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { useColorMode, IconButton, Link } from '@chakra-ui/core'
+import { useColorMode, IconButton, Link } from '@chakra-ui/react'
 import { FiChevronUp } from 'react-icons/fi'
 
 const TopButton = () => {

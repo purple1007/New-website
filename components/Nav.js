@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { useColorMode, Button, Flex, Spacer, Icon } from '@chakra-ui/core'
+import { useColorMode, Button, Flex, Spacer, Icon } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import { FiSun, FiMoon } from 'react-icons/fi'
 

@@ -1,5 +1,5 @@
 
-import { useColorMode, Container, Flex } from '@chakra-ui/core'
+import { useColorMode, Container, Flex } from '@chakra-ui/react'
 import Nav from './Nav'
 import Footer from './Footer'
 

@@ -1,4 +1,4 @@
-import { Link } from '@chakra-ui/core'
+import { Link } from '@chakra-ui/react'
 
 const FooterLink = ({ item }) => {
   return (
