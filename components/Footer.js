@@ -68,14 +68,13 @@ const Footer = () => {
               Let's talk!
             </Heading>
             <Link
-              href='info@debbylin.me'
+              href='mailto:info@debbylin.me'
               data-event-category='Footer'
               data-event-action='E-mail'
               _hover={{
                 color: 'primary.base',
                 textDecoration: 'underline'
               }}
-              isExternal
             >
               info@debbylin.me
             </Link>
