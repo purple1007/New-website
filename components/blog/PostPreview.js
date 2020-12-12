@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { useColorMode, Heading, Link, Box } from '@chakra-ui/core'
+import { useColorMode, Heading, Link, Box } from '@chakra-ui/react'
 import PreviewParagraph from './PreviewParagraph'
 import PostDetail from '../blog/PostDetail'
 import { RichText } from 'prismic-reactjs'

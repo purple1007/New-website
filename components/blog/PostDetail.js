@@ -1,4 +1,4 @@
-import { useColorMode, Text } from '@chakra-ui/core'
+import { useColorMode, Text } from '@chakra-ui/react'
 
 const PostDetail = ({ date, categories }) => {
   const { colorMode } = useColorMode()

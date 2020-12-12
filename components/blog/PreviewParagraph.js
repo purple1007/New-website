@@ -1,6 +1,6 @@
 import React from 'react'
 import { RichText } from 'prismic-reactjs'
-import { Text } from '@chakra-ui/core'
+import { Text } from '@chakra-ui/react'
 /**
  * Component that returns the first paragraph of a post
  */

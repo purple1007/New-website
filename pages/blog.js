@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import { Heading, VStack } from '@chakra-ui/core'
+import { Heading, VStack } from '@chakra-ui/react'
 import Prismic from 'prismic-javascript'
 import { Client } from '../lib/prismic-helpers'
 import PostPreview from '../components/blog/PostPreview'
