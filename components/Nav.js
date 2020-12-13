@@ -11,7 +11,7 @@ const StickyNav = styled(Flex)`
   transition: background-color 0.1 ease-in-out;
 `
 
-const Nav = () => {
+export const Nav = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   const navBgColor = {
@@ -129,5 +129,3 @@ const Nav = () => {
     </>
   )
 }
-
-export default Nav

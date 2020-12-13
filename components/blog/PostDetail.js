@@ -1,6 +1,6 @@
 import { useColorMode, Text } from '@chakra-ui/react'
 
-const PostDetail = ({ date, categories }) => {
+export const PostDetail = ({ date, categories }) => {
   const { colorMode } = useColorMode()
 
   const smalltextColor = {
@@ -20,5 +20,3 @@ const PostDetail = ({ date, categories }) => {
     </>
   )
 }
-
-export default PostDetail

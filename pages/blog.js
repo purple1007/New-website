@@ -1,9 +1,9 @@
-import Layout from '../components/Layout'
-import { Heading, VStack } from '@chakra-ui/react'
+import { NextSeo } from 'next-seo'
 import Prismic from 'prismic-javascript'
 import { Client } from '../lib/prismic-helpers'
-import PostPreview from '../components/blog/PostPreview'
-import { NextSeo } from 'next-seo'
+import { PostPreview } from '../components/blog/PostPreview'
+import { Heading, VStack } from '@chakra-ui/react'
+import { Layout } from '../components/Layout'
 
 const title = 'Blog | Debby'
 const url = 'https://www.debbylin.me/blog'

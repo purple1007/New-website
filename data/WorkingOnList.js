@@ -1,4 +1,4 @@
-const WorkItemList = [
+export const WorkItemList = [
   {
     title: 'UI / UX Designer',
     summary: 'Love using Figma and creating interesting layouts and colors.',
@@ -25,4 +25,3 @@ const WorkItemList = [
   }
 ]
 
-export default WorkItemList

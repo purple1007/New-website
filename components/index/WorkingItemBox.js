@@ -1,6 +1,6 @@
 import { useColorMode, Heading, Text, Link } from '@chakra-ui/react'
 
-const WorkingItemBox = ({ item }) => {
+export const WorkingItemBox = ({ item }) => {
   const { colorMode } = useColorMode()
 
   const borderColor = {
@@ -92,5 +92,3 @@ const WorkingItemBox = ({ item }) => {
     </>
   )
 }
-
-export default WorkingItemBox

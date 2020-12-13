@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 import { useColorMode, IconButton, Link } from '@chakra-ui/react'
 import { FiChevronUp } from 'react-icons/fi'
 
-const TopButton = () => {
+export const TopButton = () => {
   const { colorMode } = useColorMode()
   const iconColor = {
     light: 'lightGray.400',
@@ -47,5 +47,3 @@ const TopButton = () => {
     </>
   )
 }
-
-export default TopButton

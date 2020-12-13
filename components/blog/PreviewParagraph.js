@@ -4,7 +4,7 @@ import { Text } from '@chakra-ui/react'
 /**
  * Component that returns the first paragraph of a post
  */
-const PreviewParagraph = ({ textLimit,content }) => {
+export const PreviewParagraph = ({ textLimit,content }) => {
   const text = RichText.asText(content)
   let limitedText = text.substring(0, textLimit)
 
@@ -15,5 +15,3 @@ const PreviewParagraph = ({ textLimit,content }) => {
 
   return <Text mt={2} mb={6}>{limitedText}</Text>
 }
-
-export default PreviewParagraph

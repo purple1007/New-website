@@ -1,9 +1,9 @@
 import { useColorMode, Container, Box, Heading, Link, Text, Flex } from '@chakra-ui/react'
-import TopButton from './metrics/TopButton'
-import FooterLink from './FooterLink'
-import FooterLinkItem from '../data/FooterLinkItem'
+import { TopButton } from './metrics/TopButton'
+import { FooterLink } from './FooterLink'
+import { FooterLinkItem } from '../data/FooterLinkItem'
 
-const Footer = () => {
+export const Footer = () => {
   const { colorMode } = useColorMode()
 
   const bgColor = {
@@ -118,5 +118,3 @@ const Footer = () => {
     </>
   )
 }
-
-export default Footer
