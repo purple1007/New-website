@@ -20,7 +20,7 @@
     "@emotion/styled": "^11.0.0",
     "babel-plugin-import-glob-array": "^0.2.0",
     "framer-motion": "^2.9.4",
-    "next": "^10.0.1",
+    "next": "^10.0.3",
     "next-google-fonts": "^1.2.1",
     "next-seo": "^4.17.0",
     "react": "16.14.0",
