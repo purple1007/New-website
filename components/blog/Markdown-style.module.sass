@@ -1,9 +1,11 @@
 $primary-base: #FF1850
+$darkGray-800: #19202C
 $darkGray-700: #2B3747
 $darkGary-200: #E1E8F0
 $lightGray-700: #393939
 $lightGray-300: #D5D5D5
 $lightGray-200: #E9E9E9
+$lightGray-100: #F2F2F2
 
 .DarkTheme,.LightTheme
   h1,h2,h3,h4,h5,h6
@@ -38,10 +40,11 @@ $lightGray-200: #E9E9E9
 
 .embedStyle
   margin: 1rem 0rem
-  padding: 0rem 0rem 1rem 0rem
   a 
     display: flex
     flex-direction: column
+    padding-bottom: 1rem
+    transition: all .1s        
     h1
       color: $primary-base
       font-size: 1.5rem
@@ -66,12 +69,18 @@ $lightGray-200: #E9E9E9
     border-bottom: 1px solid $darkGray-700
   .embedStyle
     border: 1px solid $darkGray-700
+    a
+      &:hover
+        background-color: $darkGray-800
 
 .LightTheme
   h2
     border-bottom: 1px solid $lightGray-200
   .embedStyle
     border: 1px solid $lightGray-200
+    a
+      &:hover
+        background-color: $lightGray-100
 
 // Breakpoints
 $sm: '30em'

@@ -93,7 +93,7 @@ export const Nav = () => {
               </Button>
             </NextLink> */}
 
-            <NextLink href='/blog' passHref replace>
+            {/* <NextLink href='/blog' passHref replace>
               <Button
                 as='a'
                 color={primarytextColor[colorMode]}
@@ -108,7 +108,7 @@ export const Nav = () => {
               >
                 Blog
               </Button>
-            </NextLink>
+            </NextLink> */}
 
             <Button
               aria-label='Toggle dark mode'

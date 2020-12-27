@@ -25,6 +25,9 @@ export const HtmlSerializer = function (type, element, children, key) {
       const embedHtml = React.createElement('div', { dangerouslySetInnerHTML: { __html: element.oembed.html } })
       return React.createElement('div', propsWithUniqueKey(props, key), embedHtml)
 
+    // case Elements.preformatted: // Preformatted
+    //   return React.createElement('pre', propsWithUniqueKey(props, key), children)
+
     // Add a class to hyperlinks
     case Elements.hyperlink:
       const targetAttr = element.data.target ? { target: element.data.target } : {}
