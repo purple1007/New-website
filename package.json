@@ -16,7 +16,7 @@
   "dependencies": {
     "@chakra-ui/react": "^1.0.0",
     "@chakra-ui/theme": "^1.2.2",
-    "@emotion/react": "^11.0.0",
+    "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "babel-plugin-import-glob-array": "^0.2.0",
     "framer-motion": "^2.9.4",
