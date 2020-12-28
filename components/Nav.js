@@ -11,7 +11,7 @@ const StickyNav = styled(Flex)`
   transition: background-color 0.1 ease-in-out;
 `
 
-const Nav = () => {
+export const Nav = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   const navBgColor = {
@@ -53,8 +53,7 @@ const Nav = () => {
           maxWidth='900px'
           width='100%'
         >
-
-          <NextLink href='/' passHref>
+          <NextLink href='/' passHref replace>
             <Button
               as='a'
               color='primary.base'
@@ -80,19 +79,21 @@ const Nav = () => {
             {/* <NextLink href='/' passHref>
               <Button
                 as='a'
-                color={ primarytextColor[colorMode] }
+                color={primarytextColor[colorMode]}
                 fontSize='base'
                 fontWeight='normal'
                 variant='ghost'
                 _hover={{
                   bg: hoverIconBgColor[colorMode],
-                  color: 'primary.300' }}
-                _active={{ bg:'opacity.0' }} >
+                  color: 'primary.300'
+                }}
+                _active={{ bg: 'opacity.0' }}
+              >
                 Works
               </Button>
             </NextLink> */}
 
-            {/* <NextLink href='blog' passHref>
+            {/* <NextLink href='/blog' passHref replace>
               <Button
                 as='a'
                 color={primarytextColor[colorMode]}
@@ -122,13 +123,9 @@ const Nav = () => {
                 color={iconColor[colorMode]}
               />
             </Button>
-
           </Flex>
-
         </Flex>
       </StickyNav>
     </>
   )
 }
-
-export default Nav

@@ -1,9 +1,9 @@
-import Layout from '../components/Layout'
-import Hero from '../components/index/Hero'
-import WorkingOn from '../components/index/WorkingOn'
-import WorkExperience from '../components/index/WorkExperience'
+import { Layout } from '../components/Layout'
+import { Hero } from '../components/index/Hero'
+import { WorkingOn } from '../components/index/WorkingOn'
+import { WorkExperience } from '../components/index/WorkExperience'
 
-const Index = () => {
+export default function Index () {
   return (
     <>
       <Layout>
@@ -14,5 +14,3 @@ const Index = () => {
     </>
   )
 }
-
-export default Index

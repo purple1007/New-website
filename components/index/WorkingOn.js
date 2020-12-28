@@ -1,9 +1,9 @@
 import { Box, Flex } from '@chakra-ui/react'
-import SectionTitle from '../metrics/Heading'
-import WorkingItemBox from './WorkingItemBox'
-import WorkItemList from '../../data/WorkingOnList'
+import { SectionTitle } from '../metrics/Heading'
+import { WorkingItemBox } from './WorkingItemBox'
+import { WorkItemList } from '../../data/WorkingOnList'
 
-const WorkingOn = () => {
+export const WorkingOn = () => {
   return (
     <>
       <Box
@@ -29,5 +29,3 @@ const WorkingOn = () => {
     </>
   )
 }
-
-export default WorkingOn

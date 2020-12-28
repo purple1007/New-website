@@ -1,4 +1,4 @@
-const WorkTimeline = [
+export const WorkTimeline = [
   {
     time: '2019/08 ~ Now',
     title: '5xRuby Training Group CO., LTD',
@@ -20,5 +20,3 @@ const WorkTimeline = [
     position: 'Graphic Designer'
   }
 ]
-
-export default WorkTimeline

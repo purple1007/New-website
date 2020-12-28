@@ -1,6 +1,6 @@
-import { Heading, Text, Flex, Link } from '@chakra-ui/react'
+import { Heading, Text, Link } from '@chakra-ui/react'
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <>
       <Heading
@@ -66,5 +66,3 @@ const Hero = () => {
     </>
   )
 }
-
-export default Hero

@@ -24,6 +24,7 @@ const theme = {
   colors: {
     primary: {
       base: '#FF1850',
+      600: '#bf0b36',
       500: '#FF3F6D',
       400: '#FF658A',
       300: '#FF658A',

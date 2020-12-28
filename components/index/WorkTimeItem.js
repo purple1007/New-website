@@ -1,6 +1,6 @@
 import { useColorMode, Box, Text } from '@chakra-ui/react'
 
-const WorkTimeItem = ({ item }) => {
+export const WorkTimeItem = ({ item }) => {
   const { colorMode } = useColorMode()
 
   const timeTextColor = {
@@ -50,5 +50,3 @@ const WorkTimeItem = ({ item }) => {
     </>
   )
 }
-
-export default WorkTimeItem
