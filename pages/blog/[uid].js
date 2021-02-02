@@ -1,6 +1,5 @@
 import { NextSeo } from 'next-seo'
-import Prismic from 'prismic-javascript'
-import { Client } from '../../lib/prismic-helpers'
+
 import { RichText } from 'prismic-reactjs'
 
 import { useColorMode, Heading, Box } from '@chakra-ui/react'
@@ -52,8 +51,10 @@ export default function Post ({ data }) {
     </Layout>
   )
 }
-const client = Client()
+
 export async function getStaticProps({ params }) {
+  const { Client } = await import('../../lib/prismic-helpers')
+  const client = Client()
   const { uid } = params
   const { data } = await client.getByUID('blog-post', uid)
   return {
@@ -62,6 +63,9 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
+  const { Client } = await import('../../lib/prismic-helpers')
+  const client = Client()
+  const Prismic = await import('prismic-javascript')
   const { results } = await client.query(
     Prismic.Predicates.at('document.type', 'blog-post')
   )

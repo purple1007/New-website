@@ -1,6 +1,4 @@
 import { NextSeo } from 'next-seo'
-import Prismic from 'prismic-javascript'
-import { Client } from '../lib/prismic-helpers'
 import { PostPreview } from '../components/blog/PostPreview'
 import { Heading, VStack } from '@chakra-ui/react'
 import { Layout } from '../components/Layout'
@@ -57,6 +55,8 @@ export default function Blog ({ posts }) {
 }
 
 export async function getStaticProps () {
+  const { Client } = await import('../lib/prismic-helpers')
+  const Prismic = await import('prismic-javascript')
   const client = Client()
   const posts = await client.query(
     Prismic.Predicates.at('document.type', 'blog-post'),
