@@ -1,4 +1,4 @@
-const FooterLinkItem = [
+export const FooterLinkItem = [
   {
     name: 'Dribbble',
     url: 'https://dribbble.com/debby'
@@ -20,5 +20,3 @@ const FooterLinkItem = [
     url: 'https://www.linkedin.com/in/debbylin1991/'
   }
 ]
-
-export default FooterLinkItem

@@ -1,6 +1,6 @@
 import { Heading } from '@chakra-ui/react'
 
-const SectionTitle = ({ children }) => {
+export const SectionTitle = ({ children }) => {
   return (
     <>
       <Heading
@@ -26,5 +26,3 @@ const SectionTitle = ({ children }) => {
     </>
   )
 }
-
-export default SectionTitle

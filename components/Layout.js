@@ -1,9 +1,9 @@
 
 import { useColorMode, Container, Flex } from '@chakra-ui/react'
-import Nav from './Nav'
-import Footer from './Footer'
+import { Nav } from './Nav'
+import { Footer } from './Footer'
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   const { colorMode } = useColorMode()
 
   const primarytextColor = {
@@ -44,5 +44,3 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
-export default Layout
